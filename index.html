@@ -2,44 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CLP Authentication Services - Development Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLP Project | Developer Documentation & Status</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 40px; color: #333; }
-        .header { border-bottom: 2px solid #eee; padding-bottom: 20px; }
-        .feature-box { background: #f4f4f4; padding: 20px; border-radius: 8px; margin: 20px 0; }
-        .tech-tag { display: inline-block; background: #0078d4; color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: #24292e; max-width: 850px; margin: 0 auto; padding: 40px 20px; background-color: #f6f8fa; }
+        .container { background: #ffffff; border: 1px solid #d1d5da; border-radius: 6px; padding: 32px; box-shadow: 0 1px 3px rgba(27,31,35,0.12); }
+        .badge { background-color: #2188ff; color: white; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; vertical-align: middle; }
+        h1 { border-bottom: 1px solid #eaecef; padding-bottom: 10px; font-size: 2rem; }
+        h2 { margin-top: 24px; border-bottom: 1px solid #eaecef; padding-bottom: 8px; }
+        code { background-color: rgba(27,31,35,0.05); padding: 0.2em 0.4em; border-radius: 3px; font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; }
+        ul { padding-left: 20px; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>CLP Authentication & Notification System</h1>
-        <p class="tech-tag">Status: Active Development (Sandbox)</p>
-    </div>
-    
-    <section>
-        <h2>Project Overview</h2>
-        <p>This domain (clp.us.ci) serves as the primary notification gateway for our internal application. We are currently integrating <strong>Resend API</strong> to handle transactional communications.</p>
-    </section>
+    <div class="container">
+        <h1>CLP Authentication Gateway <span class="badge">Development</span></h1>
+        
+        <p>This domain (<strong>clp.us.ci</strong>) is dedicated to the integration and testing of transactional email services for our internal <strong>ASP.NET Core</strong> backend infrastructure.</p>
 
-    <div class="feature-box">
-        <h3>Planned Email Workflows:</h3>
+        <h2>Project Specifications</h2>
         <ul>
-            <li>One-Time Passwords (OTP) for user sign-up</li>
-            <li>Magic links for password-less authentication</li>
-            <li>System health alerts for ASP.NET Core backend</li>
+            <li><strong>Framework:</strong> ASP.NET Core 9.0 (Web API)</li>
+            <li><strong>Service Provider:</strong> Resend API (Free Tier)</li>
+            <li><strong>Purpose:</strong> Handling automated system notifications and identity verification.</li>
         </ul>
+
+        <h2>Planned Email Workflows</h2>
+        <p>During the development phase, we are implementing the following transactional templates:</p>
+        <ul>
+            <li><code>OTP_VERIFICATION</code>: Sending 6-digit verification codes for user registration.</li>
+            <li><code>PASSWORD_RESET</code>: Delivering secure, time-sensitive reset links.</li>
+            <li><code>SYSTEM_ALERT</code>: Internal notifications regarding server status and API health.</li>
+        </ul>
+
+        <h2>Integration Status</h2>
+        <p>Currently, the DNS records are managed via <strong>HE.net</strong> and the static documentation is hosted on <strong>Netlify</strong>. We are awaiting API activation to finalize our SMTP/API relay logic.</p>
+        
+        <p><em>Note: This is a non-public environment. No marketing or bulk emails will be sent from this domain.</em></p>
     </div>
-
-    <section>
-        <h2>Tech Stack</h2>
-        <p>Backend: <strong>ASP.NET Core 8.0 / 9.0</strong><br>
-           Delivery Service: <strong>Resend</strong><br>
-           Hosting: <strong>Netlify</strong></p>
-    </section>
-
-    <footer>
-        <p>Contact: <a href="mailto:你的注册邮箱">clp4276--90@outlook.com</a></p>
-        <p style="font-size: 0.8rem; color: #999;">&copy; 2025 CLP Project. Strictly for transactional testing.</p>
-    </footer>
 </body>
 </html>
