@@ -1,20 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CLP Project</title>
+    <title>CLP Authentication Services - Development Portal</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #fafafa; }
-        .box { border: 1px solid #eee; padding: 40px; background: #fff; display: inline-block; border-radius: 10px; }
-        h1 { color: #333; }
-        p { color: #666; }
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 40px; color: #333; }
+        .header { border-bottom: 2px solid #eee; padding-bottom: 20px; }
+        .feature-box { background: #f4f4f4; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .tech-tag { display: inline-block; background: #0078d4; color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>CLP Project</h1>
-        <p>System Status: <b>Development Phase</b></p>
-        <p>This domain is used for testing transactional email integrations.</p>
+    <div class="header">
+        <h1>CLP Authentication & Notification System</h1>
+        <p class="tech-tag">Status: Active Development (Sandbox)</p>
     </div>
+    
+    <section>
+        <h2>Project Overview</h2>
+        <p>This domain (clp.us.ci) serves as the primary notification gateway for our internal application. We are currently integrating <strong>Resend API</strong> to handle transactional communications.</p>
+    </section>
+
+    <div class="feature-box">
+        <h3>Planned Email Workflows:</h3>
+        <ul>
+            <li>One-Time Passwords (OTP) for user sign-up</li>
+            <li>Magic links for password-less authentication</li>
+            <li>System health alerts for ASP.NET Core backend</li>
+        </ul>
+    </div>
+
+    <section>
+        <h2>Tech Stack</h2>
+        <p>Backend: <strong>ASP.NET Core 8.0 / 9.0</strong><br>
+           Delivery Service: <strong>Resend</strong><br>
+           Hosting: <strong>Netlify</strong></p>
+    </section>
+
+    <footer>
+        <p>Contact: <a href="mailto:你的注册邮箱">你的注册邮箱</a></p>
+        <p style="font-size: 0.8rem; color: #999;">&copy; 2025 CLP Project. Strictly for transactional testing.</p>
+    </footer>
 </body>
 </html>
